@@ -432,11 +432,13 @@ A \%Contrib  é baseada nas estimativas dos componentes da variância. Cada valo
 	\label{tab:gagerr}
 \end{table}
 
+A tabela \ref{tab:avamed} nos fornece a referência final para aprovar ou rejeitar o sistema de medição. Esta tabela informa os valores calculados para as fontes de variação, desvios padrão e variáveis do estudo. Para encontrar os valores que estão na coluna variável do estudo, seguimos a recomendação da \textit{Automotive Industry Action Group }(AIAG): multiplicamos o valor do desvio padrão por 6 em uma distribuição normal, já que dentro de 6 desvios padrão estão certa de 99,73\% dos dados \cite{estudos_rr}. Por fim, a coluna \%Var do estudo divide a variável do estudo pela variação total para descobrir quanto da variação do sistema de medição representa da variação total do sistema. Abaixo da tabela, o número de categorias distintas informa quantas categorias diferentes o sistema de medição foi capaz de discriminar de acordo com as variações apresentadas.  
+
 \begin{table}[H]
-	\caption{Gage R\&R}
+	\caption{Avaliação das medições}
 	\centering
 	\begin{tabular}{lccc}
-										   & \multicolumn{1}{l}{StdDev} & \multicolumn{1}{l}{StudyVar} & \multicolumn{1}{l}{\%StudyVar} \\ \hline
+										   & \multicolumn{1}{l}{Desvio padrão} & \multicolumn{1}{l}{Var do estudo} & \multicolumn{1}{l}{\%Var do estudo} \\ \hline
 	\multicolumn{1}{l|}{Total Gage R\&R}   & 1.1328710                  & 6.7972259                    & 50.66                          \\
 	\multicolumn{1}{l|}{---Repetibilidade}    & 1.1267200                  & 6.7603202                    & 50.38                          \\
 	\multicolumn{1}{l|}{---Reprodutibilidade} & 0.1178924                  & 0.7073545                    & 5.27                           \\
@@ -444,9 +446,12 @@ A \%Contrib  é baseada nas estimativas dos componentes da variância. Cada valo
 	\multicolumn{1}{l|}{Peça a Peça}       & 1.9282812                  & 11.5696870                   & 86.22                          \\
 	\multicolumn{1}{l|}{Variação Total}    & 2.2364402                  & 13.4186414                   & 100                           
 	\end{tabular}
-	\end{table}
+	\label{tab:avamed}
+\end{table}	
 
 Número de categorias distintas - 2
+
+Para que o sistema de medição seja considerado aceitável, é esperado que o mesmo possua valor menor que 10\% em seu Gage R\&R. O sistema de medição analisado neste documento está acima de 50\% em seu Gage R\&R total, logo, é classificado como inaceitável e deve ser melhorado. É recomendado pela AIAG que o numero de categorias distintas seja maior ou igual a 5 para uma ideal diferenciação. O valor calculado de 2, é considerado insuficiente. 
 
 A Figura \ref{fig:compvar} representa o gráfico dos componentes da variação onde cada agrupamento de barras representa uma origem de
 variação. A altura das barras, representa percentualmente, o quanto cada componente é responsável. As barras azuis representam o percentual de contribuição para a variação geral e as rosas a contribuição para a variação no estudo.
@@ -507,6 +512,8 @@ Na Figura \ref{fig:graf4} cada um dos testes têm distribuídos em torno da linh
 
 Na seção \ref{fig:graf6} este gráfico apresenta uma junção dos gráficos exibidos em Média da amostra por máquina a fim de fazer uma comparação entre as médias encontradas para cada robô. É usado para checar se existe uma relação entre máquina e um robô específico. Caso alguma máquina tenha uma dificuldade com algum tipo de robô, será possível observar uma discrepância entre as linhas em determinado robô. No gráfico apresentado, verifica-se que há muita diferença entre cada máquina.
 
+\section*{Conclusão}
+O valor encontrado na porcentagem de variação do estudo classifica o sistema de medição como inaceitável. A não conformidade com o numero de categorias distintas também é um fator que contribui negativamente com os resultados encontrados. É uma solução possível a retomada dos dados e realização de novos testes.
 
 
 
