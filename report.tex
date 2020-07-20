@@ -448,14 +448,13 @@ A \%Contrib  é baseada nas estimativas dos componentes da variância. Cada valo
 
 Número de categorias distintas - 2
 
+Já na figura \ref{fig:r_maquina} podemos verificar a amplitude da amostra por operador. Observe que segundo a tabela \ref{tab:maquinas} temos quatro operadores diferentes e é exatamente isto que encontra-se disposto aqui. Cada ponto representa a diferença entre a maior e a menor leitura observada para cada uma das três medições realizadas em cada robô. Embora haja um certo padrão comportamental entre os quatro gráficos, valores muito distantes como o do robô 1 no operador 2 indicam a existência de dificuldades nesta medição. 
 \begin{figure}[H]
-	\centering
-	\caption{Tempo por máquina}
-	\includegraphics[scale = 1]{figures/graf4.png}
-	\label{fig:graf4}
+	\caption{Amplitude da Amostra por Máquina}
+	\includegraphics[]{figures/graf3.png}
+	\label{fig:r_maquina}
 \end{figure}
 
-Na Figura \ref{fig:graf4} cada um dos testes têm distribuídos em torno da linha azul central (a média) as leituras efetuadas. Note que as leituras se distribuem em torno das leituras em azul, o que significa que estão muito distantes do alvo o que representa um erro de leitura, uma leitura ruim ou errada. As medidas de tempo encontradas para cada um dos operadores encontram-se exibidos nesse gráfico, onde cada valor encontrado é representado por um círculo e uma reta passa por seus valores médios. Quanto menor o ângulo entre cada uma das máquinas melhor para o sistema, pois significa que não há grande diferença entre as capacidades de operação das máquinas.
 
 \begin{figure}[H]
 	\centering
@@ -467,6 +466,23 @@ Na Figura \ref{fig:graf4} cada um dos testes têm distribuídos em torno da linh
 Na Figura \ref{fig:graf5} é plotada a média das medições com o mesmo intuito do gráfico Amplitude de Amostra por Máquina. Mas neste caso a média é utilizada. Neste gráfico estão exibidas as médias do tempo para cada robô. Podemos observar que há um comportamento similar entre as máquinas 2 e 3, porém as máquinas 1 e 4 exibem médias diferentes do que se esperava para o
 sistema.
 
+Na seção \textit{tempo\_r by\ robo\_r} exibida na figura \ref{fig:tempo_robo} encontram-se distribuídas em torno do ponto central (média) as leituras efetuadas para cada robô, sendo traçada uma reta ligando estas médias. Pode-se notar que existem alguns pontos distantes do ponto central, o que pode significar um erro de medição, uma medição ruim ou errada.
+\begin{figure}[H]
+	\caption{Tempo por Robô}
+	\includegraphics[]{figures/graf2.png}
+	\label{fig:tempo_robo}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\caption{Tempo por máquina}
+	\includegraphics[scale = 1]{figures/graf4.png}
+	\label{fig:graf4}
+\end{figure}
+
+Na Figura \ref{fig:graf4} cada um dos testes têm distribuídos em torno da linha azul central (a média) as leituras efetuadas. Note que as leituras se distribuem em torno das leituras em azul, o que significa que estão muito distantes do alvo o que representa um erro de leitura, uma leitura ruim ou errada. As medidas de tempo encontradas para cada um dos operadores encontram-se exibidos nesse gráfico, onde cada valor encontrado é representado por um círculo e uma reta passa por seus valores médios. Quanto menor o ângulo entre cada uma das máquinas melhor para o sistema, pois significa que não há grande diferença entre as capacidades de operação das máquinas.
+
+
 
 \begin{figure}[H]
 	\centering
@@ -476,6 +492,11 @@ sistema.
 \end{figure}
 
 Na seção \ref{fig:graf6} este gráfico apresenta uma junção dos gráficos exibidos em Média da amostra por máquina a fim de fazer uma comparação entre as médias encontradas para cada robô. É usado para checar se existe uma relação entre máquina e um robô específico. Caso alguma máquina tenha uma dificuldade com algum tipo de robô, será possível observar uma discrepância entre as linhas em determinado robô. No gráfico apresentado, verifica-se que há muita diferença entre cada máquina.
+
+
+
+
+
 
 %---------------------------------------------------------------------------------------
 % Referências
